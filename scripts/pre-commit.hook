@@ -23,7 +23,7 @@ CPPCHECK_suppresses="--inline-suppr harness.c \
 --suppress=preprocessorErrorDirective:random.h \
 --suppress=constParameterPointer:queue.c \
 "
-CPPCHECK_OPTS="-I. --enable=all --error-exitcode=1 --force $CPPCHECK_suppresses $CPPCHECK_unmatched ."
+CPPCHECK_OPTS="-I. --check-level=exhaustive --enable=all --error-exitcode=1 --force $CPPCHECK_suppresses $CPPCHECK_unmatched ."
 
 RETURN=0
 CLANG_FORMAT=$(which clang-format)
